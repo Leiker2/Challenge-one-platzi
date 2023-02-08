@@ -13,11 +13,27 @@
     />
 
     <title>
-      Frontend Mentor | Huddle landing page with single introductory section
+      Huddle | landing page
     </title>
 
     <!-- No dude en eliminar estos estilos o personalizarlos en su propia hoja de estilo 👍 -->
     <style>
+      @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');      
+      @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+      body{
+        margin: 0;
+        background:hsl(257, 40%, 49%) ;
+        background-image: url(images/bg-desktop.svg);
+      }
+      nav{
+        margin: 40px;
+      }
+      nav img{
+        width: 200px;
+      }
+      section img{
+        margin-left: 40px;
+      }
       .attribution {
         font-size: 11px;
         text-align: center;
@@ -25,11 +41,41 @@
       .attribution a {
         color: hsl(228, 45%, 44%);
       }
+      .centre{
+        display: flex;
+      }
+      article h1{
+        font-family: 'Poppins', sans-serif;
+        color: white;
+        font-size: 35px;
+        margin-bottom: 0px;
+        margin-top: 40px;
+      }
+      article p{
+        font-family: 'Open Sans', sans-serif;
+        color: white;
+
+      }
+      article{
+        margin-left: 60px;
+        margin-right: 130px;
+        text-align: justify;
+        font-size: 1.1rem;
+      }
     </style>
   </head>
   <body>
-    Build The Community Your Fans Will Love Huddle re-imagines the way we build
-    communities. You have a voice, but so does your audience. Create connections
-    with your users as you engage in genuine discussion. Register
+    <nav>
+      <img src="images/logo.svg" alt="Logo">
+    </nav>
+    <div class="centre">
+      <section>
+        <img src="images/illustration-mockups.svg" alt="img-desktop">
+      </section>
+      <article>
+        <h1>Build The Community <br> Your Fans Will Love</h1>
+        <p>Huddle re-imagines the way we build communities. You have a voice, but so does your audience. Create connections with your users as you engage in genuine discussion.</p>
+      </article>
+    </div>
   </body>
 </html>
