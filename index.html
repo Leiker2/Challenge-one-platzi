@@ -20,6 +20,16 @@
     <style>
       @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');      
       @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+      @media (min-width:375px) {
+        body{
+        margin: 0;
+        background:hsl(257, 40%, 49%) ;
+        background-image: url(images/bg-mobile.svg);
+      }
+        
+      }
+
       body{
         margin: 0;
         background:hsl(257, 40%, 49%) ;
@@ -33,13 +43,6 @@
       }
       section img{
         margin-left: 40px;
-      }
-      .attribution {
-        font-size: 11px;
-        text-align: center;
-      }
-      .attribution a {
-        color: hsl(228, 45%, 44%);
       }
       .centre{
         display: flex;
@@ -81,12 +84,42 @@
       article a{
         text-decoration: none;
       }
+      footer{
+        width: 100%;
+        height: 50px;
+        display: flex;
+        justify-content:flex-end;
+      }
+      .social-icon{
+        width: 35px;
+        height: 35px;
+        margin-right: 15px;
+        margin-top: 15px;
+        margin-bottom: 10px;
+        border-radius: 100%;
+        border: 1px solid black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .social-icon img{
+        width: 25px;
+        height: 25px;
+      }
+      footer a:nth-child(3){
+        margin-right:115px;
+      }
     </style>
   </head>
   <body>
+
+    <!-- this is navbar, here are logo -->
     <nav>
       <img src="images/logo.svg" alt="Logo">
     </nav>
+
+    <!-- this is section, here are article and section image -->
+
     <div class="centre">
       <section>
         <img src="images/illustration-mockups.svg" alt="img-desktop">
@@ -101,5 +134,26 @@
         </a>
       </article>
     </div>
+
+    <!--This is the footer, here are the social icons-->
+
+    <footer>
+      <a href="https://www.facebook.com/">
+        <div class="social-icon">
+          <img src="images/social-icons/facebook.svg" alt="icon-facebook">
+        </div>
+      </a>
+      <a href="https://twitter.com/?lang=es">
+        <div class="social-icon">
+          <img src="images/social-icons/twitter.svg" alt="icon-twitter">
+        </div>
+      </a>
+      <a href="https://www.instagram.com/">
+        <div class="social-icon">
+          <img src="images/social-icons/instagram.svg" alt="icon-instagram">
+        </div>
+      </a>
+    </footer>
+
   </body>
 </html>
