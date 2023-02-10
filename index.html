@@ -19,16 +19,7 @@
     <!-- No dude en eliminar estos estilos o personalizarlos en su propia hoja de estilo 👍 -->
     <style>
       @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');      
-      @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
-
-      @media (min-width:375px) {
-        body{
-        margin: 0;
-        background:hsl(257, 40%, 49%) ;
-        background-image: url(images/bg-mobile.svg);
-      }
-        
-      }
+      @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');        
 
       body{
         margin: 0;
@@ -109,6 +100,34 @@
       footer a:nth-child(3){
         margin-right:115px;
       }
+      @media (max-width:375px) {
+        body{
+        margin: 0;
+        background:hsl(257, 40%, 49%) ;
+        background-image: url(images/bg-mobile.svg);
+        }
+        nav{
+          display: flex;
+          justify-content:flex-start;
+          margin: 0px;
+          margin-top: 20px;
+          margin-bottom: 20px;
+          margin-left: 20px;
+        }
+        nav img{
+        width: 120px;
+        }
+        .centre{
+          display:flex;
+          flex-direction: column;
+          justify-content: center;
+        }
+        section img{
+          width: 80%;
+          margin-left: 0px;
+        }
+      }
+
     </style>
   </head>
   <body>
